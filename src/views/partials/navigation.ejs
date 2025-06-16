@@ -1,1 +1,93 @@
-<h1>Hola Mundo una locura</h1>
+<style>
+  .top-bar {
+    background-color: #6C568C;
+    color: #F2F2F2;
+    font-size: 0.9rem;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-bar p{
+    margin: 0;
+  }
+
+  .top-bar img {
+    height: 30px;
+  }
+
+  .navbar-brand img {
+    height: 48px;
+  }
+
+  .navbar {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+</style>
+
+<div class="top-bar">
+    <img src="img/logo-negativo.png" alt="Logo" />
+    <p>Explora nuestro blog y newsletter</p>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-white">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="/img/logo-positivo.png" alt="Logo" />
+      <strong>Nexum</strong>
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div
+      class="collapse navbar-collapse justify-content-end"
+      id="navbarNavDropdown"
+    >
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Comunidad</a></li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            >Recursos</a
+          >
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Artículos</a></li>
+            <li><a class="dropdown-item" href="#">Guías</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            >Redes</a
+          >
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Instagram</a></li>
+            <li><a class="dropdown-item" href="#">Twitter</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acceder a la comunidad</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
