@@ -1,3 +1,85 @@
 body {
-    background-color: #1E1826;
+  background-color: #f0fff4;
+}
+
+.hero-section {
+  padding: 30px 0;
+}
+
+.hero-image {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.badge-top {
+  background-color: #6c568c;
+  color: white;
+  font-size: 0.75rem;
+  padding: 5px 10px;
+  border-radius: 999px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.filter-btn {
+  border: none;
+  background-color: #edf2f7;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-right: 5px;
+  margin-top: 10px;
+  font-size: 0.85rem;
+}
+
+.filter-btn:hover {
+  background-color: #c6f6d5;
+}
+
+.stats-section {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.stat-item h4 {
+  font-weight: bold;
+  color: #6c568c;
+}
+
+.stat-item p {
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+:root {
+  --nexum-primary: #6C568C;
+  --nexum-accent1: #A63F03;
+  --nexum-accent2: #362559;
+  --nexum-dark: #1E1826;
+}
+
+.text-primary {
+  color: var(--nexum-primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--nexum-primary);
+  border-color: var(--nexum-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--nexum-accent2);
+  border-color: var(--nexum-accent2);
+}
+
+.precio {
+  color: #dc3545;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.icon-list i {
+  margin-right: 4px;
+  color: var(--nexum-dark);
 }
