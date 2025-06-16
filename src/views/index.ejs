@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nexum</title>
-    <%- include ('partials/head') %>
+    <%- include ('partials/head-index') %>
   </head>
   <body>
     <%- include ('partials/navigation') %>
@@ -60,74 +60,13 @@
 
     <section class="container mb-5 propiedades-section">
       <div class="row g-4">
-        <!-- Propiedad 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card shadow-sm h-100">
-            <img
-              src="/img/prop1.png"
-              class="card-img-top"
-              alt="Apartamento de lujo"
-            />
-            <div class="card-body">
-              <h5 class="card-title text-primary">Apartamento de Lujo</h5>
-              <p class="text-muted mb-1">Polanco, Ciudad de México</p>
-              <p class="precio">$4,500,000</p>
-              <ul class="list-unstyled d-flex flex-wrap mb-3 icon-list">
-                <li class="me-3"><i class="ph ph-bed"></i> 3 Habitaciones</li>
-                <li class="me-3"><i class="ph ph-toilet"></i> 2 Baños</li>
-                <li><i class="ph ph-ruler"></i> 120 m²</li>
-              </ul>
-              <a href="#" class="btn btn-primary btn-sm">Ver detalles</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Propiedad 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card shadow-sm h-100">
-            <img
-              src="/img/prop2.png"
-              class="card-img-top"
-              alt="Casa con Jardín"
-            />
-            <div class="card-body">
-              <h5 class="card-title text-primary">Casa con Jardín</h5>
-              <p class="text-muted mb-1">Coyoacán, Ciudad de México</p>
-              <p class="precio">$6,200,000</p>
-              <ul class="list-unstyled d-flex flex-wrap mb-3 icon-list">
-                <li class="me-3"><i class="ph ph-bed"></i> 4 Habitaciones</li>
-                <li class="me-3"><i class="ph ph-toilet"></i> 3 Baños</li>
-                <li><i class="ph ph-ruler"></i> 250 m²</li>
-              </ul>
-              <a href="#" class="btn btn-primary btn-sm">Ver detalles</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Propiedad 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card shadow-sm h-100">
-            <img
-              src="/img/propo3.png"
-              class="card-img-top"
-              alt="Condominio Moderno"
-            />
-            <div class="card-body">
-              <h5 class="card-title text-primary">Condominio Moderno</h5>
-              <p class="text-muted mb-1">Santa Fe, Ciudad de México</p>
-              <p class="precio">$3,800,000</p>
-              <ul class="list-unstyled d-flex flex-wrap mb-3 icon-list">
-                <li class="me-3"><i class="ph ph-bed"></i> 2 Habitaciones</li>
-                <li class="me-3"><i class="ph ph-toilet"></i> 2 Baños</li>
-                <li><i class="ph ph-ruler"></i> 95 m²</li>
-              </ul>
-              <a href="#" class="btn btn-primary btn-sm">Ver detalles</a>
-            </div>
-          </div>
-        </div>
+        <%- include ('partials/propiedad') %>
+        <%- include ('partials/propiedad') %>
+        <%- include ('partials/propiedad') %>
       </div>
     </section>
 
     <%- include ('partials/footer') %>
+    <%- include ('partials/nexa') %>
   </body>
 </html>

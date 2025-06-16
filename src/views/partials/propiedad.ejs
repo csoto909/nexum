@@ -1,0 +1,43 @@
+<style>
+  /* === Botones === */
+  .btn-primary {
+    background-color: var(--nexum-primary);
+    border-color: var(--nexum-primary);
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--nexum-accent2);
+    border-color: var(--nexum-accent2);
+  }
+
+  /* === Precio === */
+  .precio {
+    color: var(--danger);
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+
+  /* === Lista de Iconos === */
+  .icon-list i {
+    margin-right: 4px;
+    color: var(--nexum-dark);
+  }
+</style>
+
+<div class="col-md-6 col-lg-4">
+  <div class="card shadow-sm h-100">
+    <img src="/img/prop1.png" class="card-img-top" alt="Apartamento de lujo" />
+    <div class="card-body">
+      <h5 class="card-title text-primary">Apartamento de Lujo</h5>
+      <p class="text-muted mb-1">Polanco, Ciudad de México</p>
+      <p class="precio">$4,500,000</p>
+      <ul class="list-unstyled d-flex flex-wrap mb-3 icon-list">
+        <li class="me-3"><i class="ph ph-bed"></i> 3 Habitaciones</li>
+        <li class="me-3"><i class="ph ph-toilet"></i> 2 Baños</li>
+        <li><i class="ph ph-ruler"></i> 120 m²</li>
+      </ul>
+      <a href="#" class="btn btn-primary btn-sm">Ver detalles</a>
+    </div>
+  </div>
+</div>

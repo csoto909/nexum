@@ -1,38 +1,47 @@
 <style>
-  .footer-nexus {
-    background-color: #6C568C;
-    color: #f2f2f2;
+  :root {
+    --footer-bg: #6c568c;
+    --footer-text: #f2f2f2;
+    --footer-accent: #dc3545;
   }
 
+  /* === Footer Nexus === */
+  .footer-nexus {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+  }
+
+  /* === Enlaces del Footer === */
   .footer-link {
-    color: #f2f2f2;
+    color: var(--footer-text);
     text-decoration: none;
     transition: color 0.3s;
   }
 
+  /* === Subrayado decorativo === */
   .footer-underline {
     width: 30px;
     height: 3px;
-    background-color: #dc3545;
+    background-color: var(--footer-accent);
   }
 
+  /* === Texto final del Footer === */
   .final {
-    color: #f2f2f2 !important;
+    color: var(--footer-text) !important;
   }
 
+  /* === Logo === */
   .logo-footer {
     height: 30px;
   }
 
+  /* === Contenedor de Logo === */
   .logo-container {
     display: flex;
     align-items: center;
   }
 
-  .logo-footer {
-    height: 30px;
-  }
-
+  /* === Tipografía === */
   .fw-bold {
     margin: 0;
   }
@@ -43,8 +52,8 @@
     <div class="row gy-4">
       <div class="col-12 col-md-6 col-lg-3">
         <div class="logo-container">
-            <img class="logo-footer" src="/img/logo-negativo.png" alt="">
-            <h5 class="fw-bold">Nexus</h5>
+          <img class="logo-footer" src="/img/logo-negativo.png" alt="" />
+          <h5 class="fw-bold">Nexus</h5>
         </div>
         <p class="text-muted mb-0 final">Tu inmobiliaria de confianza</p>
       </div>

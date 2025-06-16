@@ -6,5 +6,11 @@ router.get("/", (req, res) => {
 router.get("/propiedades", (req, res) => {
     res.render("propiedades");
 });
+router.get("/admin", (req, res) => {
+    res.render("admin");
+});
+router.get("/dashboard", (req, res) => {
+    res.render("dashboard");
+});
 
 export default router;

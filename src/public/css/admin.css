@@ -1,0 +1,56 @@
+:root {
+  --nexum-primary: #6c568c;
+  --nexum-accent1: #a63f03;
+  --nexum-accent2: #362559;
+  --nexum-dark: #1e1826;
+  --light-bg: #f0fff4;
+  --light-gray: #edf2f7;
+  --danger: #dc3545;
+}
+
+body {
+  background-color: var(--light-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.login-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+}
+
+.form-control {
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background-color: var(--nexum-primary);
+  border: none;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background-color: var(--nexum-accent2);
+}
+
+.login-title {
+  color: var(--nexum-primary);
+  font-weight: bold;
+}
+
+.text-link {
+  font-size: 0.9rem;
+  color: var(--nexum-primary);
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}

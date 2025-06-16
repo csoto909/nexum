@@ -1,0 +1,90 @@
+<style>
+  .property-card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s ease;
+  }
+
+  .property-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .property-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .property-header h5 {
+    color: var(--nexum-primary);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  .property-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.95rem;
+    color: #4a5568;
+  }
+
+  .property-meta i {
+    color: var(--nexum-accent2);
+    margin-right: 6px;
+  }
+
+  .property-actions {
+    display: flex;
+    justify-content: end;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .btn-edit {
+    background-color: var(--hover-green);
+    color: var(--nexum-dark);
+  }
+
+  .btn-delete {
+    background-color: var(--danger);
+    color: white;
+  }
+
+  @media (max-width: 576px) {
+    .property-meta {
+      flex-direction: column;
+    }
+
+    .property-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+</style>
+
+<div class="property-card">
+  <div class="property-header">
+    <h5><i class="ph ph-house"></i> Casa Familiar en Medellín</h5>
+    <span class="badge bg-success">Disponible</span>
+  </div>
+  <div class="property-meta">
+    <div><i class="ph ph-map-pin-line"></i> Medellín, Antioquia</div>
+    <div><i class="ph ph-currency-circle-dollar"></i> $350,000,000 COP</div>
+    <div><i class="ph ph-bed"></i> 3 Habitaciones</div>
+    <div><i class="ph ph-bathtub"></i> 2 Baños</div>
+    <div><i class="ph ph-ruler"></i> 120 m²</div>
+  </div>
+  <div class="property-actions">
+    <button class="btn btn-sm btn-edit">
+      <i class="ph ph-pencil-line"></i> Editar
+    </button>
+    <button class="btn btn-sm btn-delete">
+      <i class="ph ph-trash"></i> Eliminar
+    </button>
+  </div>
+</div>
