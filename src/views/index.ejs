@@ -1,12 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nexum</title>
     <%- include ('partials/head') %>
-</head>
-<body>
+
+    <style>
+      body {
+        background-color: #f0fff4;
+      }
+
+      .hero-section {
+        padding: 30px 0;
+      }
+
+      .hero-image {
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .badge-top {
+        background-color: #6c568c;
+        color: white;
+        font-size: 0.75rem;
+        padding: 5px 10px;
+        border-radius: 999px;
+        margin-bottom: 15px;
+        display: inline-block;
+      }
+
+      .filter-btn {
+        border: none;
+        background-color: #edf2f7;
+        padding: 5px 12px;
+        border-radius: 20px;
+        margin-right: 5px;
+        margin-top: 10px;
+        font-size: 0.85rem;
+      }
+
+      .filter-btn:hover {
+        background-color: #c6f6d5;
+      }
+
+      .stats-section {
+        padding-top: 40px;
+        text-align: center;
+      }
+
+      .stat-item h4 {
+        font-weight: bold;
+        color: #6c568c;
+      }
+
+      .stat-item p {
+        font-size: 0.9rem;
+        color: #4a5568;
+      }
+    </style>
+  </head>
+  <body>
     <%- include ('partials/navigation') %>
-</body>
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <!-- Texto -->
+          <div class="col-lg-6">
+            <span class="badge-top"
+              >Invierte en tu futuro, vive tus sueños.</span
+            >
+            <h1 class="display-5 fw-bold">Conecta con tu lugar ideal</h1>
+            <p class="text-muted mb-4">
+              Descubre espacios únicos para vivir, trabajar o invertir con
+              Nexum, donde lo que imaginas se vuelve realidad
+            </p>
+
+            <div class="mb-4">
+              <button class="filter-btn">Casas</button>
+              <button class="filter-btn">Apartamentos</button>
+              <button class="filter-btn">Oficinas</button>
+              <button class="filter-btn">Terrenos</button>
+            </div>
+          </div>
+
+          <!-- Imagen -->
+          <div class="col-lg-6 text-center">
+            <img src="/img/hero.png" alt="Casa" class="hero-image" />
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="row stats-section">
+          <div class="col-6 col-md-3 stat-item">
+            <h4>1500+</h4>
+            <p>Inmuebles disponibles</p>
+          </div>
+          <div class="col-6 col-md-3 stat-item">
+            <h4>950+</h4>
+            <p>Inmuebles vendidos</p>
+          </div>
+          <div class="col-6 col-md-3 stat-item">
+            <h4>10+</h4>
+            <p>Años en el mercado</p>
+          </div>
+          <div class="col-6 col-md-3 stat-item">
+            <h4>150+</h4>
+            <p>Clientes felcices</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
