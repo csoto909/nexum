@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dashboard | Nexum</title>
-  <%- include ('partials/head-dashboard') %>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Nexum</title>
+    <%- include ('partials/head-dashboard') %>
+  </head>
+  <body>
     <div class="dashboard-container">
-    <div class="dashboard-header">
-      <h2>Panel de Administración de Propiedades</h2>
-      <p>Gestiona, edita o elimina propiedades de manera rápida y sencilla</p>
-    </div>
+      <div class="dashboard-header">
+        <h2>Panel de Administración de Propiedades</h2>
+        <p>Gestiona, edita o elimina propiedades de manera rápida y sencilla</p>
+      </div>
 
-    <div class="d-flex justify-content-end mb-4">
-      <button class="btn btn-action">
-        <i class="ph ph-plus-circle"></i> Agregar Nueva Propiedad
-      </button>
+      <div class="d-flex justify-content-end mb-4">
+        <button class="btn btn-action">
+          <i class="ph ph-plus-circle"></i> Agregar Nueva Propiedad
+        </button>
+      </div>
+      <!-- === PROPIEDAD 3 === -->
+      <%- include ('partials/propiedad-interna') %> <%- include
+      ('partials/propiedad-interna') %> <%- include
+      ('partials/propiedad-interna') %>
     </div>
-    <!-- === PROPIEDAD 3 === -->
-     <%- include ('partials/propiedad-interna') %>
-     <%- include ('partials/propiedad-interna') %>
-     <%- include ('partials/propiedad-interna') %>
-  </div>
-</body>
+  </body>
 </html>
